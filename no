@@ -1,0 +1,691 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextButton = Instance.new("TextButton")
+local GeneralFrame = Instance.new("Frame")
+local General = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local GodMode = Instance.new("TextButton")
+local XButton = Instance.new("TextButton")
+local TextBox_2 = Instance.new("TextBox")
+local ESP = Instance.new("TextButton")
+local GeneralCategory = Instance.new("TextButton")
+local DOORSCategory = Instance.new("TextButton")
+local UtilitiesCategory = Instance.new("TextButton")
+local DOORSFrame = Instance.new("Frame")
+local XButton_2 = Instance.new("TextButton")
+local GeneralCategory_2 = Instance.new("TextButton")
+local UtilitiesCategory_2 = Instance.new("TextButton")
+local DOORSCreepyMode = Instance.new("TextButton")
+local DOORSScriptMode = Instance.new("TextButton")
+local DOORSMayhemMode = Instance.new("TextButton")
+local DOORSNightmareMode = Instance.new("TextButton")
+local DOORS = Instance.new("TextLabel")
+local DOORSCategory_2 = Instance.new("TextButton")
+local DOORSHardcoreMode = Instance.new("TextButton")
+local DOORSEndlessMode = Instance.new("TextButton")
+local DOORSImpossibleMode = Instance.new("TextButton")
+local UtilitiesFrame = Instance.new("Frame")
+local XButton_3 = Instance.new("TextButton")
+local GeneralCategory_3 = Instance.new("TextButton")
+local UtilitiesCategory_3 = Instance.new("TextButton")
+local DOORS_2 = Instance.new("TextLabel")
+local DOORSCategory_3 = Instance.new("TextButton")
+local BackdoorExecutor = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
+local mspaint = Instance.new("TextButton")
+local UIDragDetector = Instance.new("UIDragDetector")
+local UIDragDetector_2 = Instance.new("UIDragDetector")
+local UIDragDetector_3 = Instance.new("UIDragDetector")
+local speedConfirmation = Instance.new("TextButton")
+local jumpPowerConfirmation = Instance.new("TextButton")
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 170, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0169014093, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 120, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Ambush's Script Hub"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 15.000
+
+GeneralFrame.Name = "GeneralFrame"
+GeneralFrame.Parent = TextButton
+GeneralFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+GeneralFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GeneralFrame.BorderSizePixel = 0
+GeneralFrame.Position = UDim2.new(1.1144135, 0, 0.268684685, 0)
+GeneralFrame.Size = UDim2.new(0, 444, 0, 287)
+GeneralFrame.Visible = false
+
+General.Name = "General"
+General.Parent = GeneralFrame
+General.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+General.BackgroundTransparency = 1.000
+General.BorderColor3 = Color3.fromRGB(0, 0, 0)
+General.BorderSizePixel = 0
+General.Position = UDim2.new(0.258992791, 0, 0.125435546, 0)
+General.Size = UDim2.new(0, 200, 0, 50)
+General.Font = Enum.Font.SourceSans
+General.Text = "----- GENERAL -----"
+General.TextColor3 = Color3.fromRGB(0, 85, 0)
+General.TextSize = 30.000
+General.TextWrapped = true
+
+TextBox.Parent = GeneralFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.35731414, 0, 0.348030537, 0)
+TextBox.Size = UDim2.new(0, 120, 0, 50)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(0, 170, 0)
+TextBox.PlaceholderText = "WalkSpeed Value (for example, 16)"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 170, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 16.000
+TextBox.TextWrapped = true
+
+GodMode.Name = "GodMode"
+GodMode.Parent = GeneralFrame
+GodMode.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+GodMode.BorderColor3 = Color3.fromRGB(85, 170, 0)
+GodMode.BorderSizePixel = 0
+GodMode.Position = UDim2.new(0, 0, 0.348030537, 0)
+GodMode.Size = UDim2.new(0, 120, 0, 50)
+GodMode.Font = Enum.Font.SourceSans
+GodMode.Text = "God Mode"
+GodMode.TextColor3 = Color3.fromRGB(0, 170, 0)
+GodMode.TextScaled = true
+GodMode.TextSize = 15.000
+GodMode.TextWrapped = true
+
+XButton.Name = "XButton"
+XButton.Parent = GeneralFrame
+XButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+XButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
+XButton.BorderSizePixel = 0
+XButton.Position = UDim2.new(0.928057551, 0, 0, 0)
+XButton.Size = UDim2.new(0, 30, 0, 20)
+XButton.Font = Enum.Font.SourceSans
+XButton.Text = "X"
+XButton.TextColor3 = Color3.fromRGB(170, 0, 0)
+XButton.TextScaled = true
+XButton.TextSize = 17.000
+XButton.TextWrapped = true
+
+TextBox_2.Parent = GeneralFrame
+TextBox_2.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.712230206, 0, 0.348030537, 0)
+TextBox_2.Size = UDim2.new(0, 120, 0, 50)
+TextBox_2.ClearTextOnFocus = false
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(0, 170, 0)
+TextBox_2.PlaceholderText = "JumpPower/JumpHeight Value (for example, 50 or 7.2)"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(0, 170, 0)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 16.000
+TextBox_2.TextWrapped = true
+
+ESP.Name = "ESP"
+ESP.Parent = GeneralFrame
+ESP.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+ESP.BorderColor3 = Color3.fromRGB(85, 170, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(-0.000794006919, 0, 0.557841003, 0)
+ESP.Size = UDim2.new(0, 120, 0, 50)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(0, 170, 0)
+ESP.TextScaled = true
+ESP.TextSize = 15.000
+ESP.TextWrapped = true
+
+GeneralCategory.Name = "GeneralCategory"
+GeneralCategory.Parent = GeneralFrame
+GeneralCategory.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+GeneralCategory.BorderColor3 = Color3.fromRGB(85, 170, 0)
+GeneralCategory.BorderSizePixel = 0
+GeneralCategory.Position = UDim2.new(0, 0, -0.000401513505, 0)
+GeneralCategory.Size = UDim2.new(0, 120, 0, 50)
+GeneralCategory.Font = Enum.Font.SourceSans
+GeneralCategory.Text = "General Category"
+GeneralCategory.TextColor3 = Color3.fromRGB(0, 170, 0)
+GeneralCategory.TextScaled = true
+GeneralCategory.TextSize = 15.000
+GeneralCategory.TextWrapped = true
+
+DOORSCategory.Name = "DOORSCategory"
+DOORSCategory.Parent = GeneralFrame
+DOORSCategory.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSCategory.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSCategory.BorderSizePixel = 0
+DOORSCategory.Position = UDim2.new(0.35731414, 0, -0.000401513505, 0)
+DOORSCategory.Size = UDim2.new(0, 120, 0, 50)
+DOORSCategory.Font = Enum.Font.SourceSans
+DOORSCategory.Text = "DOORS Category"
+DOORSCategory.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSCategory.TextScaled = true
+DOORSCategory.TextSize = 15.000
+DOORSCategory.TextWrapped = true
+
+UtilitiesCategory.Name = "UtilitiesCategory"
+UtilitiesCategory.Parent = GeneralFrame
+UtilitiesCategory.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+UtilitiesCategory.BorderColor3 = Color3.fromRGB(85, 170, 0)
+UtilitiesCategory.BorderSizePixel = 0
+UtilitiesCategory.Position = UDim2.new(0.65686363, 0, -0.000401513505, 0)
+UtilitiesCategory.Size = UDim2.new(0, 120, 0, 50)
+UtilitiesCategory.Font = Enum.Font.SourceSans
+UtilitiesCategory.Text = "Utilities Category"
+UtilitiesCategory.TextColor3 = Color3.fromRGB(0, 170, 0)
+UtilitiesCategory.TextScaled = true
+UtilitiesCategory.TextSize = 15.000
+UtilitiesCategory.TextWrapped = true
+
+DOORSFrame.Name = "DOORSFrame"
+DOORSFrame.Parent = TextButton
+DOORSFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+DOORSFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DOORSFrame.BorderSizePixel = 0
+DOORSFrame.Position = UDim2.new(1.11399996, 0, 0.268999994, 0)
+DOORSFrame.Size = UDim2.new(0, 444, 0, 287)
+
+XButton_2.Name = "XButton"
+XButton_2.Parent = DOORSFrame
+XButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+XButton_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+XButton_2.BorderSizePixel = 0
+XButton_2.Position = UDim2.new(0.928057551, 0, 0, 0)
+XButton_2.Size = UDim2.new(0, 30, 0, 20)
+XButton_2.Font = Enum.Font.SourceSans
+XButton_2.Text = "X"
+XButton_2.TextColor3 = Color3.fromRGB(170, 0, 0)
+XButton_2.TextScaled = true
+XButton_2.TextSize = 17.000
+XButton_2.TextWrapped = true
+
+GeneralCategory_2.Name = "GeneralCategory"
+GeneralCategory_2.Parent = DOORSFrame
+GeneralCategory_2.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+GeneralCategory_2.BorderColor3 = Color3.fromRGB(85, 170, 0)
+GeneralCategory_2.BorderSizePixel = 0
+GeneralCategory_2.Position = UDim2.new(0, 0, -0.000401513505, 0)
+GeneralCategory_2.Size = UDim2.new(0, 120, 0, 50)
+GeneralCategory_2.Font = Enum.Font.SourceSans
+GeneralCategory_2.Text = "General Category"
+GeneralCategory_2.TextColor3 = Color3.fromRGB(0, 170, 0)
+GeneralCategory_2.TextScaled = true
+GeneralCategory_2.TextSize = 15.000
+GeneralCategory_2.TextWrapped = true
+
+UtilitiesCategory_2.Name = "UtilitiesCategory"
+UtilitiesCategory_2.Parent = DOORSFrame
+UtilitiesCategory_2.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+UtilitiesCategory_2.BorderColor3 = Color3.fromRGB(85, 170, 0)
+UtilitiesCategory_2.BorderSizePixel = 0
+UtilitiesCategory_2.Position = UDim2.new(0.65686363, 0, -0.000401513505, 0)
+UtilitiesCategory_2.Size = UDim2.new(0, 120, 0, 50)
+UtilitiesCategory_2.Font = Enum.Font.SourceSans
+UtilitiesCategory_2.Text = "Utilities Category"
+UtilitiesCategory_2.TextColor3 = Color3.fromRGB(0, 170, 0)
+UtilitiesCategory_2.TextScaled = true
+UtilitiesCategory_2.TextSize = 15.000
+UtilitiesCategory_2.TextWrapped = true
+
+DOORSNightmareMode.Name = "DOORSNightmareMode"
+DOORSNightmareMode.Parent = DOORSFrame
+DOORSNightmareMode.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSNightmareMode.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSNightmareMode.BorderSizePixel = 0
+DOORSNightmareMode.Position = UDim2.new(0, 0, 0.774391, 0)
+DOORSNightmareMode.Size = UDim2.new(0, 120, 0, 50)
+DOORSNightmareMode.Font = Enum.Font.SourceSans
+DOORSNightmareMode.Text = "DOORS Nightmare Mode (Credits to Kodbol)"
+DOORSNightmareMode.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSNightmareMode.TextScaled = true
+DOORSNightmareMode.TextSize = 15.000
+DOORSNightmareMode.TextWrapped = true
+
+DOORSCreepyMode.Name = "DOORSCreepyMode"
+DOORSCreepyMode.Parent = DOORSFrame
+DOORSCreepyMode.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSCreepyMode.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSCreepyMode.BorderSizePixel = 0
+DOORSCreepyMode.Position = UDim2.new(0.697841704, 0, 0.337577581, 0)
+DOORSCreepyMode.Size = UDim2.new(0, 120, 0, 50)
+DOORSCreepyMode.Font = Enum.Font.SourceSans
+DOORSCreepyMode.Text = "DOORS Creepy Mode (Credits to DripCapybara)"
+DOORSCreepyMode.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSCreepyMode.TextScaled = true
+DOORSCreepyMode.TextSize = 15.000
+DOORSCreepyMode.TextWrapped = true
+
+DOORSScriptMode.Name = "DOORSScriptMode"
+DOORSScriptMode.Parent = DOORSFrame
+DOORSScriptMode.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSScriptMode.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSScriptMode.BorderSizePixel = 0
+DOORSScriptMode.Position = UDim2.new(0.354916066, 0, 0.34106189, 0)
+DOORSScriptMode.Size = UDim2.new(0, 120, 0, 50)
+DOORSScriptMode.Font = Enum.Font.SourceSans
+DOORSScriptMode.Text = "DOORS Script Mode (Credits to Munci Seek (correct me if i'm wrong))"
+DOORSScriptMode.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSScriptMode.TextScaled = true
+DOORSScriptMode.TextSize = 15.000
+DOORSScriptMode.TextWrapped = true
+
+DOORSMayhemMode.Name = "DOORSMayhemMode"
+DOORSMayhemMode.Parent = DOORSFrame
+DOORSMayhemMode.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSMayhemMode.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSMayhemMode.BorderSizePixel = 0
+DOORSMayhemMode.Position = UDim2.new(0, 0, 0.344546229, 0)
+DOORSMayhemMode.Size = UDim2.new(0, 120, 0, 50)
+DOORSMayhemMode.Font = Enum.Font.SourceSans
+DOORSMayhemMode.Text = "DOORS Mayhem Mode (Credits to LocalPlayer)"
+DOORSMayhemMode.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSMayhemMode.TextScaled = true
+DOORSMayhemMode.TextSize = 15.000
+DOORSMayhemMode.TextWrapped = true
+
+DOORS.Name = "DOORS"
+DOORS.Parent = DOORSFrame
+DOORS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DOORS.BackgroundTransparency = 1.000
+DOORS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DOORS.BorderSizePixel = 0
+DOORS.Position = UDim2.new(0.261390895, 0, 0.170731708, 0)
+DOORS.Size = UDim2.new(0, 200, 0, 50)
+DOORS.Font = Enum.Font.SourceSans
+DOORS.Text = "----- DOORS -----"
+DOORS.TextColor3 = Color3.fromRGB(0, 85, 0)
+DOORS.TextSize = 30.000
+DOORS.TextWrapped = true
+
+DOORSCategory_2.Name = "DOORSCategory"
+DOORSCategory_2.Parent = DOORSFrame
+DOORSCategory_2.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSCategory_2.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSCategory_2.BorderSizePixel = 0
+DOORSCategory_2.Position = UDim2.new(0.348305106, 0, -0.00388583401, 0)
+DOORSCategory_2.Size = UDim2.new(0, 120, 0, 50)
+DOORSCategory_2.Font = Enum.Font.SourceSans
+DOORSCategory_2.Text = "DOORS Category"
+DOORSCategory_2.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSCategory_2.TextScaled = true
+DOORSCategory_2.TextSize = 15.000
+DOORSCategory_2.TextWrapped = true
+
+DOORSHardcoreMode.Name = "DOORSHardcoreMode"
+DOORSHardcoreMode.Parent = DOORSFrame
+DOORSHardcoreMode.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSHardcoreMode.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSHardcoreMode.BorderSizePixel = 0
+DOORSHardcoreMode.Position = UDim2.new(-0.000356450822, 0, 0.553605437, 0)
+DOORSHardcoreMode.Size = UDim2.new(0, 120, 0, 50)
+DOORSHardcoreMode.Font = Enum.Font.SourceSans
+DOORSHardcoreMode.Text = "DOORS Hardcore Mode (Credits to DripCapybara, currently not working)"
+DOORSHardcoreMode.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSHardcoreMode.TextScaled = true
+DOORSHardcoreMode.TextSize = 15.000
+DOORSHardcoreMode.TextWrapped = true
+
+DOORSEndlessMode.Name = "DOORSHardcoreMode"
+DOORSEndlessMode.Parent = DOORSFrame
+DOORSEndlessMode.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSEndlessMode.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSEndlessMode.BorderSizePixel = 0
+DOORSEndlessMode.Position = UDim2.new(0.36450842, 0, 0.553605437, 0)
+DOORSEndlessMode.Size = UDim2.new(0, 120, 0, 50)
+DOORSEndlessMode.Font = Enum.Font.SourceSans
+DOORSEndlessMode.Text = "DOORS Endless Mode (Credits to DripCapybara)"
+DOORSEndlessMode.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSEndlessMode.TextScaled = true
+DOORSEndlessMode.TextSize = 15.000
+DOORSEndlessMode.TextWrapped = true
+
+DOORSImpossibleMode.Name = "DOORSImpossibleMode"
+DOORSImpossibleMode.Parent = DOORSFrame
+DOORSImpossibleMode.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSImpossibleMode.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSImpossibleMode.BorderSizePixel = 0
+DOORSImpossibleMode.Position = UDim2.new(0.711355269, 0, 0.553605437, 0)
+DOORSImpossibleMode.Size = UDim2.new(0, 120, 0, 50)
+DOORSImpossibleMode.Font = Enum.Font.SourceSans
+DOORSImpossibleMode.Text = "DOORS Impossible Mode (Credits to voorpro)"
+DOORSImpossibleMode.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSImpossibleMode.TextScaled = true
+DOORSImpossibleMode.TextSize = 15.000
+DOORSImpossibleMode.TextWrapped = true
+
+UtilitiesFrame.Name = "UtilitiesFrame"
+UtilitiesFrame.Parent = TextButton
+UtilitiesFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+UtilitiesFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UtilitiesFrame.BorderSizePixel = 0
+UtilitiesFrame.Position = UDim2.new(1.11399996, 0, 0.268999994, 0)
+UtilitiesFrame.Size = UDim2.new(0, 444, 0, 287)
+UtilitiesFrame.Visible = false
+
+XButton_3.Name = "XButton"
+XButton_3.Parent = UtilitiesFrame
+XButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+XButton_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+XButton_3.BorderSizePixel = 0
+XButton_3.Position = UDim2.new(0.928057551, 0, 0, 0)
+XButton_3.Size = UDim2.new(0, 30, 0, 20)
+XButton_3.Font = Enum.Font.SourceSans
+XButton_3.Text = "X"
+XButton_3.TextColor3 = Color3.fromRGB(170, 0, 0)
+XButton_3.TextScaled = true
+XButton_3.TextSize = 17.000
+XButton_3.TextWrapped = true
+
+GeneralCategory_3.Name = "GeneralCategory"
+GeneralCategory_3.Parent = UtilitiesFrame
+GeneralCategory_3.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+GeneralCategory_3.BorderColor3 = Color3.fromRGB(85, 170, 0)
+GeneralCategory_3.BorderSizePixel = 0
+GeneralCategory_3.Position = UDim2.new(0, 0, -0.000401513505, 0)
+GeneralCategory_3.Size = UDim2.new(0, 120, 0, 50)
+GeneralCategory_3.Font = Enum.Font.SourceSans
+GeneralCategory_3.Text = "General Category"
+GeneralCategory_3.TextColor3 = Color3.fromRGB(0, 170, 0)
+GeneralCategory_3.TextScaled = true
+GeneralCategory_3.TextSize = 15.000
+GeneralCategory_3.TextWrapped = true
+
+UtilitiesCategory_3.Name = "UtilitiesCategory"
+UtilitiesCategory_3.Parent = UtilitiesFrame
+UtilitiesCategory_3.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+UtilitiesCategory_3.BorderColor3 = Color3.fromRGB(85, 170, 0)
+UtilitiesCategory_3.BorderSizePixel = 0
+UtilitiesCategory_3.Position = UDim2.new(0.65686363, 0, -0.000401513505, 0)
+UtilitiesCategory_3.Size = UDim2.new(0, 120, 0, 50)
+UtilitiesCategory_3.Font = Enum.Font.SourceSans
+UtilitiesCategory_3.Text = "Utilities Category"
+UtilitiesCategory_3.TextColor3 = Color3.fromRGB(0, 170, 0)
+UtilitiesCategory_3.TextScaled = true
+UtilitiesCategory_3.TextSize = 15.000
+UtilitiesCategory_3.TextWrapped = true
+
+DOORS_2.Name = "Utilities"
+DOORS_2.Parent = UtilitiesFrame
+DOORS_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DOORS_2.BackgroundTransparency = 1.000
+DOORS_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DOORS_2.BorderSizePixel = 0
+DOORS_2.Position = UDim2.new(0.263643146, 0, 0.170731708, 0)
+DOORS_2.Size = UDim2.new(0, 200, 0, 50)
+DOORS_2.Font = Enum.Font.SourceSans
+DOORS_2.Text = "----- Utilities -----"
+DOORS_2.TextColor3 = Color3.fromRGB(0, 85, 0)
+DOORS_2.TextSize = 30.000
+DOORS_2.TextWrapped = true
+
+DOORSCategory_3.Name = "DOORSCategory"
+DOORSCategory_3.Parent = UtilitiesFrame
+DOORSCategory_3.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+DOORSCategory_3.BorderColor3 = Color3.fromRGB(85, 170, 0)
+DOORSCategory_3.BorderSizePixel = 0
+DOORSCategory_3.Position = UDim2.new(0.348305106, 0, -0.00388583401, 0)
+DOORSCategory_3.Size = UDim2.new(0, 120, 0, 50)
+DOORSCategory_3.Font = Enum.Font.SourceSans
+DOORSCategory_3.Text = "DOORS Category"
+DOORSCategory_3.TextColor3 = Color3.fromRGB(0, 170, 0)
+DOORSCategory_3.TextScaled = true
+DOORSCategory_3.TextSize = 15.000
+DOORSCategory_3.TextWrapped = true
+
+BackdoorExecutor.Name = "BackdoorExecutor"
+BackdoorExecutor.Parent = UtilitiesFrame
+BackdoorExecutor.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+BackdoorExecutor.BorderColor3 = Color3.fromRGB(85, 170, 0)
+BackdoorExecutor.BorderSizePixel = 0
+BackdoorExecutor.Position = UDim2.new(0.00277077616, 0, 0.303485632, 0)
+BackdoorExecutor.Size = UDim2.new(0, 120, 0, 50)
+BackdoorExecutor.Font = Enum.Font.SourceSans
+BackdoorExecutor.Text = "Backdoor Executor (LALOL Hub)"
+BackdoorExecutor.TextColor3 = Color3.fromRGB(0, 170, 0)
+BackdoorExecutor.TextScaled = true
+BackdoorExecutor.TextSize = 15.000
+BackdoorExecutor.TextWrapped = true
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = UtilitiesFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+InfiniteYield.BorderColor3 = Color3.fromRGB(85, 170, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.358108103, 0, 0.303485572, 0)
+InfiniteYield.Size = UDim2.new(0, 120, 0, 50)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 170, 0)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 15.000
+InfiniteYield.TextWrapped = true
+
+mspaint.Name = "mspaint"
+mspaint.Parent = UtilitiesFrame
+mspaint.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+mspaint.BorderColor3 = Color3.fromRGB(85, 170, 0)
+mspaint.BorderSizePixel = 0
+mspaint.Position = UDim2.new(0.707207203, 0, 0.303485572, 0)
+mspaint.Size = UDim2.new(0, 120, 0, 50)
+mspaint.Font = Enum.Font.SourceSans
+mspaint.Text = "mspaint"
+mspaint.TextColor3 = Color3.fromRGB(0, 170, 0)
+mspaint.TextScaled = true
+mspaint.TextSize = 15.000
+mspaint.TextWrapped = true
+
+UIDragDetector.Parent = GeneralFrame
+UIDragDetector.Enabled = true
+UIDragDetector_2.Parent = DOORSFrame
+UIDragDetector_2.Enabled = true
+UIDragDetector_3.Parent = UtilitiesFrame
+UIDragDetector_3.Enabled = true
+speedConfirmation.Parent = GeneralFrame
+speedConfirmation.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+speedConfirmation.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speedConfirmation.BorderSizePixel = 0
+speedConfirmation.Position = UDim2.new(0.357, 0, 0.558, 0)
+speedConfirmation.Size = UDim2.new(0, 120, 0, 50)
+
+speedConfirmation.Font = Enum.Font.SourceSans
+speedConfirmation.Text = "Confirm WalkSpeed"
+speedConfirmation.TextColor3 = Color3.fromRGB(0, 170, 0)
+speedConfirmation.TextScaled = true
+speedConfirmation.TextSize = 16.000
+speedConfirmation.TextWrapped = true
+jumpPowerConfirmation.Parent = GeneralFrame
+jumpPowerConfirmation.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+jumpPowerConfirmation.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jumpPowerConfirmation.BorderSizePixel = 0
+jumpPowerConfirmation.Position = UDim2.new(0.711, 0, 0.558, 0)
+jumpPowerConfirmation.Size = UDim2.new(0, 120, 0, 50)
+jumpPowerConfirmation.Font = Enum.Font.SourceSans
+
+jumpPowerConfirmation.Text = "Confirm JumpPower"
+jumpPowerConfirmation.TextColor3 = Color3.fromRGB(0, 170, 0)
+jumpPowerConfirmation.TextScaled = true
+jumpPowerConfirmation.TextSize = 16.000
+jumpPowerConfirmation.TextWrapped = true
+
+
+XButton.MouseButton1Click:Connect(function()
+        GeneralFrame.Visible = false
+end)
+XButton.MouseButton1Click:Connect(function()
+        GeneralFrame.Visible = false
+end)
+XButton_2.MouseButton1Click:Connect(function()
+        DOORSFrame.Visible = false
+end)
+XButton_3.MouseButton1Click:Connect(function()
+        UtilitiesFrame.Visible = false
+end)
+TextButton.MouseButton1Click:Connect(function()
+        GeneralFrame.Visible = true
+end)
+DOORSCategory.MouseButton1Click:Connect(function()
+        DOORSFrame.Visible = true
+        UtilitiesFrame.Visible = false
+        GeneralFrame.Visible = false
+end)
+DOORSCategory_2.MouseButton1Click:Connect(function()
+        DOORSFrame.Visible = true
+        UtilitiesFrame.Visible = false
+        GeneralFrame.Visible = false
+end)
+DOORSCategory_3.MouseButton1Click:Connect(function()
+        DOORSFrame.Visible = true
+        UtilitiesFrame.Visible = false
+        GeneralFrame.Visible = false
+end)
+GeneralCategory.MouseButton1Click:Connect(function()
+        GeneralFrame.Visible = true
+        UtilitiesFrame.Visible = false
+        DOORSFrame.Visible = false
+end)
+GeneralCategory_2.MouseButton1Click:Connect(function()
+        GeneralFrame.Visible = true
+        UtilitiesFrame.Visible = false
+        DOORSFrame.Visible = false
+end)
+GeneralCategory_3.MouseButton1Click:Connect(function()
+        GeneralFrame.Visible = true
+        UtilitiesFrame.Visible = false
+        DOORSFrame.Visible = false
+end)
+UtilitiesCategory.MouseButton1Click:Connect(function()
+        UtilitiesFrame.Visible = true
+        DOORSFrame.Visible = false
+        GeneralFrame.Visible = false
+end)
+UtilitiesCategory_2.MouseButton1Click:Connect(function()
+        UtilitiesFrame.Visible = true
+        DOORSFrame.Visible = false
+        GeneralFrame.Visible = false
+end)
+UtilitiesCategory_3.MouseButton1Click:Connect(function()
+        UtilitiesFrame.Visible = true
+        DOORSFrame.Visible = false
+        GeneralFrame.Visible = false
+end)
+GodMode.MouseButton1Click:Connect(function()
+        local player = game.Players.LocalPlayer
+        local humanoid = player.Character:FindFirstChildWhichIsA("Humanoid")
+        humanoid.Health = humanoid.MaxHealth
+        humanoid:GetPropertyChangedSignal("Health"):Connect(function()
+                if humanoid.Health < humanoid.MaxHealth then
+                        humanoid.Health = humanoid.MaxHealth
+                end
+        end)
+end)
+speedConfirmation.MouseButton1Click:Connect(function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = TextBox.Text
+end)
+jumpPowerConfirmation.MouseButton1Click:Connect(function()
+if game.Players.LocalPlayer.Character.Humanoid.UseJumpPower == true then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = TextBox.Text
+else
+        game.Players.LocalPlayer.Character.Humanoid.JumpHeight = TextBox.Text / 6.9444444444
+        end
+        end)
+ESP.MouseButton1Click:Connect(function()
+        local esp = Instance.new("Highlight")
+        for _, player in game.Players:GetPlayers() do
+                if player ~= game.Players.LocalPlayer then
+                        esp:Clone().Parent = player.Character
+                end
+        end
+end)
+InfiniteYield.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()
+end)
+BackdoorExecutor.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
+end)
+DOORSMayhemMode.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/localplayerr/Doors-stuff/refs/heads/main/Mayhem%20mode%20recreate/Code'))()
+end)
+DOORSCreepyMode.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DripCapybara/Doors-Modes/refs/heads/main/CreepyMode/ObfuscatedMain.lua'))()
+end)
+DOORSScriptMode.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Munciseekawa/Scripts-Mode/main/Loader.luau'))()
+end)
+DOORSEndlessMode.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DripCapybara/Doors-Mode/Remakes/refs/heads/main/EndlessMode.lua'))()
+end)
+mspaint.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/002c19202c9946e6047b0c6e0ad51f84.lua'))()
+end)
+DOORSHardcoreMode.MouseButton1Click:Connect(function()
+        local message = Instance.new("Message", game.Players.LocalPlayer.PlayerGui)
+        message.Text = "note from ambush: this mode is currently broken, however DripCapybara is eventually going to fix it, thanks for reading! - 194ajh (if this message keeps appearing even after the mode is fixed, please contact me and i will remove it)."
+        task.wait(8)
+        message:Destroy()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/HardcoreFixed.lua"))()
+end)
+DOORSImpossibleMode.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Impossible%20%Mode%Recoded%20Made%20By%20Guestly'))()
+end)
+DOORSNightmareMode.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kodbol/Nightmare-mode/refs/heads/main/Nightmare%20mode.lua'))()
+end)
+local player = game.Players.LocalPlayer
+player.CharacterAdded:Connect(function()
+        ScreenGui:Clone().Parent = player.PlayerGui
+        TextButton:Clone().Parent = ScreenGui
+        DOORSFrame:Clone().Parent = TextButton
+        GeneralFrame:Clone().Parent = TextButton
+        UtilitiesFrame:Clone().Parent = TextButton
+        TextBox:Clone().Parent = GeneralFrame
+        GeneralCategory:Clone().Parent = GeneralFrame
+        DOORSCategory:Clone().Parent = GeneralFrame
+        TextBox:Clone().Parent = GeneralFrame
+        UtilitiesCategory_3:Clone().Parent = UtilitiesFrame
+        UtilitiesCategory:Clone().Parent = GeneralFrame
+        UtilitiesCategory_2:Clone().Parent = DOORSFrame
+        DOORSCategory_3:Clone().Parent = UtilitiesFrame
+        DOORSCategory_2:Clone().Parent = DOORSFrame
+        GeneralCategory_3:Clone().Parent = UtilitiesFrame
+        GeneralCategory_2:Clone().Parent = DOORSFrame
+        TextBox_2:Clone().Parent = GeneralFrame
+        speedConfirmation:Clone().Parent = GeneralFrame
+        jumpPowerConfirmation:Clone().Parent = GeneralFrame
+        mspaint:Clone().Parent = UtilitiesFrame
+        DOORSEndlessMode:Clone().Parent = DOORSFrame
+        DOORSHardcoreMode:Clone().Parent = DOORSFrame
+        DOORSCreepyMode:Clone().Parent = DOORSFrame
+        DOORSMayhemMode:Clone().Parent = DOORSFrame
+        DOORSImpossibleMode:Clone().Parent = DOORSFrame
+        DOORSScriptMode:Clone().Parent = DOORSFrame
+        BackdoorExecutor:Clone().Parent = UtilitiesFrame
+        InfiniteYield:Clone().Parent = UtilitiesFrame
+        GodMode:Clone().Parent = GeneralFrame
+        ESP:Clone().Parent = GeneralFrame
+        DOORS:Clone().Parent = DOORSFrame
+        XButton:Clone().Parent = GeneralFrame
+        XButton_3:Clone().Parent = UtilitiesFrame
+        XButton_2:Clone().Parent = DOORSFrame
+        DOORS_2:Clone().Parent = UtilitiesFrame
+        General:Clone().Parent = GeneralFrame
+end)
